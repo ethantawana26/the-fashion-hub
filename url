@@ -1,0 +1,27 @@
+I’m setting up the custom-domain files the GitHub Pages site expects so the project is ready to serve from the new domain.
+
+Ran terminal command: Get-ChildItem -Name; Write-Host '---'; Get-Content .\CNAME
+
+Created 
+
+## ✅ Custom domain setup added
+
+I created the GitHub Pages custom domain file at `CNAME` with:
+
+the-fashion-hub.com
+
+This is the file GitHub Pages uses when you want the site to load from the custom domain instead of the GitHub Pages URL.
+
+### Final result
+Your site is now configured for:
+- https://the-fashion-hub.com
+
+### Important
+To make it live, you also need to:
+1. Set the domain in your GitHub Pages settings
+2. Point your DNS to GitHub Pages
+3. Wait for DNS propagation
+
+If you want, I can also create a small deployment note or README for this custom domain setup.
+
+Made changes.
