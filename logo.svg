@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">The Fashion Hub logo</title>
+  <desc id="desc">A crowned gold and rose-gold monogram with The Fashion Hub wordmark.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4d9"/>
+      <stop offset="0.32" stop-color="#d7b279"/>
+      <stop offset="0.68" stop-color="#b87f55"/>
+      <stop offset="1" stop-color="#f5dfb5"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#metal)" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="8" d="M186 58c-24 11-42 34-45 63-4 43 27 80 70 84 43 4 80-27 84-70 2-18-3-35-13-49"/>
+    <path stroke-width="15" d="M186 76v103M247 78v101M186 123h61"/>
+    <path stroke-width="12" d="M211 83c20-31 48-36 63-25 13 10 10 29-7 40l-58 39c-16 11-14 31 2 39 17 8 41-2 57-22"/>
+    <path stroke-width="8" d="M171 39l15 12 14-25 17 25 17-25 15 25 17-12"/>
+    <path stroke-width="5" d="M188 26h8M215 14h8M242 20h8"/>
+  </g>
+  <text x="350" y="113" fill="url(#metal)" font-family="Georgia, serif" font-size="44" font-weight="700" letter-spacing="3">THE FASHION</text>
+  <text x="350" y="170" fill="url(#metal)" font-family="Georgia, serif" font-size="58" font-weight="700" letter-spacing="4">HUB</text>
+</svg>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Cedella Whata and contact THE FASHION HUB." />
+    <title>THE FASHION HUB | About & Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chat-bot.css" />
+    <script src="script.js" defer></script>
+    <script src="chat-bot.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><img class="brand-logo" src="logo.svg" alt="THE FASHION HUB" /></a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="collections.html">Collections</a>
+          <a href="images.html">Fashion Library</a>
+          <a class="active" href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary header-btn" href="mailto:ethantawana26@gmail.com">Email us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section contact-hero">
+        <div class="container story-grid">
+          <div class="story-copy reveal">
+            <div class="eyebrow">Founder</div>
+            <h2>Cedella Whata.</h2>
+            <p>
+              THE FASHION HUB was created for people who move with purpose and use clothing as a language.
+              Cedella Whata brings together the essentials, the statement pieces and the personal moments that define a wardrobe.
+            </p>
+            <p>
+              Our philosophy is simple: confidence is the best thing you can wear. We make space for experimentation,
+              culture and the unexpected combination.
+            </p>
+          </div>
+
+          <div class="story-photo reveal">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Portrait editorial styling" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container stats-grid">
+          <div class="feature-card reveal">
+            <div class="eyebrow">Studio focus</div>
+            <h3>Independent styling</h3>
+            <p>Personalised recommendations for wardrobe direction, occasion dressing and seasonal edits.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="eyebrow">Client promise</div>
+            <h3>Thoughtful curation</h3>
+            <p>Every piece is chosen for ease, elegance and the confidence to feel polished in every environment.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="eyebrow">Signature</div>
+            <h3>Modern luxury</h3>
+            <p>Minimal silhouettes elevated with rich textures, contrast and bold accessories.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-block reveal">
+            <div class="eyebrow">Let us talk</div>
+            <h2>Find your next piece.</h2>
+
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:ethantawana26@gmail.com">ethantawana26@gmail.com</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Call / WhatsApp</strong>
+              <a href="tel:+263780043130">0780043130</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Hours</strong>
+              <p>Mon - Sat / 09:00 - 17:00</p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form">
+              <input class="input" type="text" name="name" placeholder="Your name" required />
+              <input class="input" type="email" name="email" placeholder="Email address" required />
+              <select class="select" name="subject" required>
+                <option value="">What can we help with?</option>
+                <option>Order enquiry</option>
+                <option>Styling appointment</option>
+                <option>General question</option>
+              </select>
+              <textarea class="textarea" name="message" rows="6" placeholder="Tell us what you are looking for" required></textarea>
+              <button class="btn btn-primary" type="submit">Send enquiry</button>
+              <p class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="fashionAssistantMount"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>THE FASHION HUB / © <span id="year"></span></span>
+        <span>Designed for confident dressing.</span>
+        <a href="mailto:ethantawana26@gmail.com">Instagram / Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>

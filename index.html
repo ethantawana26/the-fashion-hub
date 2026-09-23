@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="THE FASHION HUB — dark luxury fashion for confident, contemporary dressing."
+    />
+    <title>THE FASHION HUB | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chat-bot.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="chat-bot.js" defer></script>
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#home"><img class="brand-logo" src="logo.svg" alt="THE FASHION HUB" /></a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+          <a class="active" href="#home">Home</a>
+          <a href="#collections">Collections</a>
+          <a href="images.html">Fashion Library</a>
+          <a href="#showcase">3D Showcase</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary header-btn" href="images.html">Browse all designs</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero home-slide" id="home">
+        <canvas class="three-canvas" id="threeCanvas" aria-hidden="true"></canvas>
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <img class="hero-logo" src="logo.svg" alt="THE FASHION HUB" />
+            <div class="eyebrow">Cedella Whata / Independent fashion</div>
+            <h1>Form in motion.</h1>
+            <p>
+              Avant-garde silhouettes shaped for the space between what is known and what comes next.
+              Curated with confidence, art direction and a fearless sense of identity.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="collections.html">Shop the edit</a>
+              <a class="btn btn-secondary" href="images.html">Browse all designs</a>
+            </div>
+          </div>
+
+          <div class="hero-aside reveal">
+            <div class="stat-card">
+              <div class="mini">New season</div>
+              <strong>2026</strong>
+              <div class="mini">Curated wardrobe essentials</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-hero-section">
+        <div class="video-background-wrapper">
+          <video class="bg-video" autoplay loop muted playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-a-dramatic-pose-40348-large.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-overlay"></div>
+        </div>
+
+        <div class="video-hero-content">
+          <span class="badge">Official Intro</span>
+          <h1 class="hero-title">Discover THE-FASHION-HUB</h1>
+          <p class="hero-subtitle">Your ultimate destination for fashion, style guides, and exclusive collections.</p>
+          <button id="openVideoBtn" class="btn-primary-video" type="button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            Watch Intro Video
+          </button>
+        </div>
+      </section>
+
+      <section class="section home-slide">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="eyebrow">The house</div>
+              <h2>Luxury with personality.</h2>
+            </div>
+            <p>
+              Built for women and men who move through life with intention; pieces that are polished,
+              expressive and easy to wear on repeat.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card reveal">
+              <div class="icon">01</div>
+              <h3>Tailored</h3>
+              <p>Sharp cuts, considered structure and elevated finishes that help every look feel intentional.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="icon">02</div>
+              <h3>Modern</h3>
+              <p>Relaxed silhouettes and contemporary lines created to move beautifully between day and night.</p>
+            </article>
+
+            <article class="feature-card reveal">
+              <div class="icon">03</div>
+              <h3>Confident</h3>
+              <p>Every collection is designed to turn simple styling into a bold personal statement.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section signature home-slide" id="collections">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="eyebrow">Featured edit</div>
+              <h2>Signature pieces.</h2>
+            </div>
+            <a class="btn btn-secondary" href="collections.html">View all</a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal">
+              <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Sculpted set" />
+              <div class="product-body">
+                <div class="product-meta"><span>Women</span><span>From $95</span></div>
+                <h3>Sculpted Set</h3>
+                <p>Structured two-piece tailoring with a soft, fluid finish.</p>
+                <a class="link" href="collections.html">Discover</a>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Night tailoring men" />
+              <div class="product-body">
+                <div class="product-meta"><span>Men</span><span>From $120</span></div>
+                <h3>Night Tailoring</h3>
+                <p>Clean lines and a relaxed cut built for elevated evening dressing.</p>
+                <a class="link" href="collections.html">Discover</a>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Lunar knit" />
+              <div class="product-body">
+                <div class="product-meta"><span>Women</span><span>From $70</span></div>
+                <h3>Lunar Knit</h3>
+                <p>A tactile layer that balances softness and shape.</p>
+                <a class="link" href="collections.html">Discover</a>
+              </div>
+            </article>
+
+            <article class="product-card reveal">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Accessories tote" />
+              <div class="product-body">
+                <div class="product-meta"><span>Accessories</span><span>From $45</span></div>
+                <h3>Everyday Tote</h3>
+                <p>An adaptable carry-all designed for everyday use and polished impact.</p>
+                <a class="link" href="collections.html">Discover</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section home-slide" id="showcase">
+        <div class="container story-grid">
+          <div class="story-photo reveal">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Fashion model in a studio" />
+          </div>
+
+          <div class="story-copy reveal">
+            <div class="eyebrow">About the brand</div>
+            <h2>Style as a point of view.</h2>
+            <p>
+              THE FASHION HUB was built for people who use clothing as a language. Cedella Whata brings together
+              silhouettes that feel personal, considered and alive.
+            </p>
+            <p>
+              We focus on textures, tailoring and statement essentials that help our clients dress with intention,
+              confidence and originality.
+            </p>
+            <a class="btn btn-secondary" href="about.html">Meet the founder</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showcase-section home-slide">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="eyebrow">3D showcase / Move your cursor</div>
+              <h2>Depth in every detail.</h2>
+            </div>
+            <p>Explore the visual language of THE FASHION HUB through tactile, floating panels built for the modern wardrobe.</p>
+          </div>
+
+          <div class="showcase-stage">
+            <article class="showcase-card tilt-card reveal" data-tilt-strength="16">
+              <div class="showcase-number">01</div>
+              <div class="showcase-orbit"></div>
+              <h3>Fluid Form</h3>
+              <p>Silhouettes that shift with the light and move with the person wearing them.</p>
+              <a class="link" href="images.html">Open the library</a>
+            </article>
+
+            <article class="showcase-card showcase-card--gold tilt-card reveal" data-tilt-strength="12">
+              <div class="showcase-number">02</div>
+              <div class="showcase-orbit"></div>
+              <h3>Quiet Power</h3>
+              <p>Tailoring, texture, and a considered palette designed to make an entrance.</p>
+              <a class="link" href="collections.html">Shop the edit</a>
+            </article>
+
+            <article class="showcase-card showcase-card--cream tilt-card reveal" data-tilt-strength="18">
+              <div class="showcase-number">03</div>
+              <div class="showcase-orbit"></div>
+              <h3>Personal Code</h3>
+              <p>Build a wardrobe that feels like a point of view, not a uniform.</p>
+              <a class="link" href="about.html#contact">Book a consult</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-panel home-slide" id="contact">
+        <div class="container reveal">
+          <div class="eyebrow">Your wardrobe, reimagined</div>
+          <h2>Wear your creativity.</h2>
+          <a class="btn btn-primary" href="about.html#contact">Start an enquiry</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="fashionAssistantMount"></div>
+
+    <div class="intro-video-modal" id="introVideoModal" aria-hidden="true">
+      <div class="intro-modal-backdrop" data-intro-close="true"></div>
+      <div class="intro-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="introModalTitle">
+        <div class="intro-modal-topbar">
+          <div>
+            <span class="eyebrow">THE FASHION HUB / Intro film</span>
+            <h2 id="introModalTitle">A wardrobe with a point of view.</h2>
+          </div>
+          <button class="intro-modal-close" id="introModalClose" type="button" aria-label="Close intro video">×</button>
+        </div>
+
+        <div class="intro-player">
+          <video id="introModalVideo" class="intro-modal-media" playsinline preload="metadata" poster="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=85">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+          </video>
+          <iframe id="introEmbedFrame" class="intro-embed-frame" title="THE FASHION HUB intro video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen hidden></iframe>
+          <div class="intro-caption" id="introCaption" aria-live="polite">Explore curated luxury collections &amp; new arrivals</div>
+          <div class="intro-player-controls">
+            <button class="intro-control" id="introPlayToggle" type="button" aria-label="Play intro video">Play</button>
+            <button class="intro-control" id="introMuteToggle" type="button" aria-label="Unmute intro video">Sound off</button>
+            <span class="intro-time" id="introTime">00:00</span>
+          </div>
+        </div>
+
+        <div class="intro-modal-footer">
+          <p>Curated silhouettes, interactive styling guidance, and a 24/7 virtual assistant for your next look.</p>
+          <div class="intro-modal-actions">
+            <a class="btn btn-primary" href="collections.html">Browse Collections</a>
+            <a class="btn btn-secondary" href="about.html#contact" data-intro-close="true">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>THE FASHION HUB / © <span id="year"></span></span>
+        <span>Designed for confident dressing.</span>
+        <a href="mailto:ethantawana26@gmail.com">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
